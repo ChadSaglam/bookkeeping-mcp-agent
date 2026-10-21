@@ -12,7 +12,7 @@ CHART = {
 }
 ALLOWED_VAT = (0.0, 2.6, 3.8, 8.1)
 REVIEW_ABOVE_CHF = 1000.0
-MAX_TEXT_LEN = 200
+MAX_TEXT_LEN = 55
 SUSPICIOUS = ("ignore", "instruction", "system", "previous", "disregard", "override",
               "answer", "correct account", "chart", "ignoriere", "anweisung", "buche auf",
               "konto", "ignorez", "consigne")
