@@ -2,3 +2,6 @@
 __pycache__/
 .DS_Store
 .env
+review_queue.jsonl
+eval_short_out.txt
+agent_demo_out.txt
