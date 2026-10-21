@@ -13,7 +13,9 @@ CHART = {
 ALLOWED_VAT = (0.0, 2.6, 3.8, 8.1)
 REVIEW_ABOVE_CHF = 1000.0
 MAX_TEXT_LEN = 200
-SUSPICIOUS = ("ignore", "instruction", "system prompt", "previous", "disregard", "override")
+SUSPICIOUS = ("ignore", "instruction", "system", "previous", "disregard", "override",
+              "answer", "correct account", "chart", "ignoriere", "anweisung", "buche auf",
+              "konto", "ignorez", "consigne")
 SYSTEM = ("You are a Swiss SME bookkeeper. Reply with ONLY the 4-digit account number "
           "from the chart.\n\nChart:\n" + "\n".join(f"{k} {v}" for k, v in sorted(CHART.items())))
 
@@ -47,13 +49,22 @@ def check_vat(vat_rate):
     return {"vat_rate": vat_rate, "status": "OK" if ok else "FLAG", "allowed": list(ALLOWED_VAT)}
 
 
-def review_line(text, amount_chf, vat_rate):
+def text_risks(text):
     reasons = []
     low = text.lower()
     if len(text) > MAX_TEXT_LEN:
         reasons.append("text unusually long")
     if any(word in low for word in SUSPICIOUS):
         reasons.append("text contains instruction-like wording")
+    if any(num in text for num in CHART):
+        reasons.append("text contains an account number")
+    if any(ch in text for ch in "<>{}"):
+        reasons.append("text contains markup characters")
+    return reasons
+
+
+def review_line(text, amount_chf, vat_rate):
+    reasons = text_risks(text)
     account = suggest_account(text, amount_chf, vat_rate)
     if account not in CHART:
         reasons.append("model returned no valid account")
