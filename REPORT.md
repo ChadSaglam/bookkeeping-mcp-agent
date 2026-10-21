@@ -40,6 +40,9 @@ which suggestions need attention, and can an MCP agent use them to build a revie
 
 ## Limits
 
+- The 56 test rows were not used for training (0 overlap with train.jsonl). 44 of them are in the
+  validation file and 12 in the hard test file of the model's data split, so they are not fully
+  independent of model development.
 - Synthetic data. The test set has 56 rows, so the 352 attacked cases are about 44 base lines with
   up to 8 suffixes each. They are not independent.
 - "Wrong" is measured against the original label. For suffixes with real content (for example

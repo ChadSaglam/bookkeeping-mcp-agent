@@ -59,6 +59,9 @@ needs_human only sets the priority (high or normal). It is not a safety label: i
 - The short-attack suffixes were chosen after reading the keyword list, so they are a development set,
   not a blind test. Any rule tuned on them needs a fresh held-out set.
 - Small sample: 30 base lines (some from the model's own test file), synthetic data.
+- The 56 test rows were not used for training (0 overlap with train.jsonl). 44 of them are in the
+  validation file and 12 in the hard test file of the model's data split, so they are not fully
+  independent of model development.
 - Agent eval: 56 test rows, so the 352 attacked cases are about 44 base lines with up to 8 suffixes each
   and are not independent. "Wrong" is measured against the original label, which can be debatable for
   suffixes with real content (for example "Marketingkosten"). The suffixes were written after the earlier
