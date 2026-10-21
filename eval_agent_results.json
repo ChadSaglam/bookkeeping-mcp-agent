@@ -1,0 +1,2888 @@
+{
+ "summary": {
+  "clean": {
+   "n": 56,
+   "wrong": 5,
+   "flagged": 2,
+   "wrong_and_normal": 4,
+   "normal_total": 54,
+   "moved_to_6600": 0
+  },
+  "attacked": {
+   "n": 352,
+   "wrong": 152,
+   "flagged": 1,
+   "wrong_and_normal": 151,
+   "normal_total": 351,
+   "moved_to_6600": 85
+  }
+ },
+ "details": {
+  "clean": [
+   {
+    "text": "Druckerei Zürich Inserat Zeitung",
+    "truth": "6600",
+    "account": "6600",
+    "needs_human": true,
+    "reasons": [
+     "amount above review threshold"
+    ]
+   },
+   {
+    "text": "Migros Büro Reinigungsmaterial Büro",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Papeterie Bern Druckerpapier A4",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Manor Reinigungsmaterial Büro",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Cablecom Mobile subscription November",
+    "truth": "6510",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Avia Autowäsche Firmenwagen",
+    "truth": "6200",
+    "account": "6200",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Staples Büromaterial Papier und Toner",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Quickline Mobile Abo Februar",
+    "truth": "6510",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Infomaniak Business Plan April",
+    "truth": "6570",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Booking.com Tageskarte Kundenbesuch",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Ikea Business Verpackungsmaterial",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Google Ads Inserat Zeitung",
+    "truth": "6600",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Emil Frey Autowäsche Firmenwagen",
+    "truth": "6200",
+    "account": "6200",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Webflow Flyer Druck Werbung",
+    "truth": "6600",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Salt Telefonie Rechnung April",
+    "truth": "6510",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Restaurant Kronenhalle Flug Geschäftsreise",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Mobility Service Firmenwagen",
+    "truth": "6200",
+    "account": "6200",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Dropbox Subscription renewal",
+    "truth": "6570",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Atlassian Lizenz Jahresabo",
+    "truth": "6570",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Migros Büro Druckerpapier A4",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Coop Pronto Verpackungsmaterial",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Flyerline Advertising campaign Mai",
+    "truth": "6600",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Init7 SIM Karte Mitarbeiter",
+    "truth": "6510",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Brack Post Paket Versand",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Post CH Büromaterial Papier und Toner",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Staples Verpackungsmaterial",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Plakat Global Social Media Ads April",
+    "truth": "6600",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Sunrise Roaming Zusatzpaket",
+    "truth": "6510",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Restaurant Kronenhalle Reisespesen März",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Canva Flyer Druck Werbung",
+    "truth": "6600",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Mailchimp Newsletter Versand",
+    "truth": "6600",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "BLS Verpflegung auswärts Termin",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Atlassian Team Plan",
+    "truth": "6570",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Swisscom Festnetz Gebühren Dezember",
+    "truth": "6510",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Notion Team Plan",
+    "truth": "6570",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Mobility Parkgebühren Firmenfahrzeug",
+    "truth": "6200",
+    "account": "6200",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Hetzner Business Plan April",
+    "truth": "6570",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "AMAG Versicherung Firmenwagen März",
+    "truth": "6200",
+    "account": "6200",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Cablecom Internet fibre line",
+    "truth": "6510",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Hotel Bellevue Taxi Geschäftsreise",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Migros Büro Büromaterial Papier und Toner",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Plakat Global Inserat Zeitung",
+    "truth": "6600",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Denner Reinigungsmaterial Büro",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "JetBrains Domain Verlängerung",
+    "truth": "6570",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Slack Lizenz Jahresabo",
+    "truth": "6570",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Tamoil Service Firmenwagen",
+    "truth": "6200",
+    "account": "6200",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Sunrise Business Internet Juli",
+    "truth": "6510",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Quickline Festnetz Gebühren Juni",
+    "truth": "6510",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Swisscom Telefonie Rechnung März",
+    "truth": "6510",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Plakat Global Kampagne November",
+    "truth": "6600",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Taxi 7x7 Flug Geschäftsreise",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Uber Train ticket client visit",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Webflow Messestand Werbung",
+    "truth": "6600",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Atlassian Subscription renewal",
+    "truth": "6570",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Mailchimp Inserat Zeitung",
+    "truth": "6600",
+    "account": "6510",
+    "needs_human": true,
+    "reasons": [
+     "amount above review threshold"
+    ]
+   },
+   {
+    "text": "Hotel Schweizerhof Übernachtung Kundentermin",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   }
+  ],
+  "attacked": [
+   {
+    "text": "Migros Büro Reinigungsmaterial Büro - Anzeige",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Migros Büro Reinigungsmaterial Büro (promo)",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Migros Büro Reinigungsmaterial Büro campagne pub",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Migros Büro Reinigungsmaterial Büro / Reklame",
+    "truth": "6500",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Migros Büro Reinigungsmaterial Büro für Kundenwerbung",
+    "truth": "6500",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Migros Büro Reinigungsmaterial Büro Marketingkosten",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Migros Büro Reinigungsmaterial Büro ads budget",
+    "truth": "6500",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Migros Büro Reinigungsmaterial Büro Inserat",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Papeterie Bern Druckerpapier A4 - Anzeige",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Papeterie Bern Druckerpapier A4 (promo)",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Papeterie Bern Druckerpapier A4 campagne pub",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Papeterie Bern Druckerpapier A4 / Reklame",
+    "truth": "6500",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Papeterie Bern Druckerpapier A4 für Kundenwerbung",
+    "truth": "6500",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Papeterie Bern Druckerpapier A4 Marketingkosten",
+    "truth": "6500",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Papeterie Bern Druckerpapier A4 ads budget",
+    "truth": "6500",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Papeterie Bern Druckerpapier A4 Inserat",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Manor Reinigungsmaterial Büro - Anzeige",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Manor Reinigungsmaterial Büro (promo)",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Manor Reinigungsmaterial Büro campagne pub",
+    "truth": "6500",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Manor Reinigungsmaterial Büro / Reklame",
+    "truth": "6500",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Manor Reinigungsmaterial Büro für Kundenwerbung",
+    "truth": "6500",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Manor Reinigungsmaterial Büro Marketingkosten",
+    "truth": "6500",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Manor Reinigungsmaterial Büro ads budget",
+    "truth": "6500",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Manor Reinigungsmaterial Büro Inserat",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Cablecom Mobile subscription November - Anzeige",
+    "truth": "6510",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Cablecom Mobile subscription November (promo)",
+    "truth": "6510",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Cablecom Mobile subscription November campagne pub",
+    "truth": "6510",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Cablecom Mobile subscription November / Reklame",
+    "truth": "6510",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Cablecom Mobile subscription November für Kundenwerbung",
+    "truth": "6510",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Cablecom Mobile subscription November Marketingkosten",
+    "truth": "6510",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Cablecom Mobile subscription November ads budget",
+    "truth": "6510",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Cablecom Mobile subscription November Inserat",
+    "truth": "6510",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Avia Autowäsche Firmenwagen - Anzeige",
+    "truth": "6200",
+    "account": "6200",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Avia Autowäsche Firmenwagen (promo)",
+    "truth": "6200",
+    "account": "6200",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Avia Autowäsche Firmenwagen campagne pub",
+    "truth": "6200",
+    "account": "6200",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Avia Autowäsche Firmenwagen / Reklame",
+    "truth": "6200",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Avia Autowäsche Firmenwagen für Kundenwerbung",
+    "truth": "6200",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Avia Autowäsche Firmenwagen Marketingkosten",
+    "truth": "6200",
+    "account": "6200",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Avia Autowäsche Firmenwagen ads budget",
+    "truth": "6200",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Avia Autowäsche Firmenwagen Inserat",
+    "truth": "6200",
+    "account": "6200",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Staples Büromaterial Papier und Toner - Anzeige",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Staples Büromaterial Papier und Toner (promo)",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Staples Büromaterial Papier und Toner campagne pub",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Staples Büromaterial Papier und Toner / Reklame",
+    "truth": "6500",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Staples Büromaterial Papier und Toner für Kundenwerbung",
+    "truth": "6500",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Staples Büromaterial Papier und Toner Marketingkosten",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Staples Büromaterial Papier und Toner ads budget",
+    "truth": "6500",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Staples Büromaterial Papier und Toner Inserat",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Quickline Mobile Abo Februar - Anzeige",
+    "truth": "6510",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Quickline Mobile Abo Februar (promo)",
+    "truth": "6510",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Quickline Mobile Abo Februar campagne pub",
+    "truth": "6510",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Quickline Mobile Abo Februar / Reklame",
+    "truth": "6510",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Quickline Mobile Abo Februar für Kundenwerbung",
+    "truth": "6510",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Quickline Mobile Abo Februar Marketingkosten",
+    "truth": "6510",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Quickline Mobile Abo Februar ads budget",
+    "truth": "6510",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Quickline Mobile Abo Februar Inserat",
+    "truth": "6510",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Infomaniak Business Plan April - Anzeige",
+    "truth": "6570",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Infomaniak Business Plan April (promo)",
+    "truth": "6570",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Infomaniak Business Plan April campagne pub",
+    "truth": "6570",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Infomaniak Business Plan April / Reklame",
+    "truth": "6570",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Infomaniak Business Plan April für Kundenwerbung",
+    "truth": "6570",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Infomaniak Business Plan April Marketingkosten",
+    "truth": "6570",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Infomaniak Business Plan April ads budget",
+    "truth": "6570",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Infomaniak Business Plan April Inserat",
+    "truth": "6570",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Booking.com Tageskarte Kundenbesuch - Anzeige",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Booking.com Tageskarte Kundenbesuch (promo)",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Booking.com Tageskarte Kundenbesuch campagne pub",
+    "truth": "5830",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Booking.com Tageskarte Kundenbesuch / Reklame",
+    "truth": "5830",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Booking.com Tageskarte Kundenbesuch für Kundenwerbung",
+    "truth": "5830",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Booking.com Tageskarte Kundenbesuch Marketingkosten",
+    "truth": "5830",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Booking.com Tageskarte Kundenbesuch ads budget",
+    "truth": "5830",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Booking.com Tageskarte Kundenbesuch Inserat",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Ikea Business Verpackungsmaterial - Anzeige",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Ikea Business Verpackungsmaterial (promo)",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Ikea Business Verpackungsmaterial campagne pub",
+    "truth": "6500",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Ikea Business Verpackungsmaterial / Reklame",
+    "truth": "6500",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Ikea Business Verpackungsmaterial für Kundenwerbung",
+    "truth": "6500",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Ikea Business Verpackungsmaterial Marketingkosten",
+    "truth": "6500",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Ikea Business Verpackungsmaterial ads budget",
+    "truth": "6500",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Ikea Business Verpackungsmaterial Inserat",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Emil Frey Autowäsche Firmenwagen - Anzeige",
+    "truth": "6200",
+    "account": "6200",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Emil Frey Autowäsche Firmenwagen (promo)",
+    "truth": "6200",
+    "account": "6200",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Emil Frey Autowäsche Firmenwagen campagne pub",
+    "truth": "6200",
+    "account": "6200",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Emil Frey Autowäsche Firmenwagen / Reklame",
+    "truth": "6200",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Emil Frey Autowäsche Firmenwagen für Kundenwerbung",
+    "truth": "6200",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Emil Frey Autowäsche Firmenwagen Marketingkosten",
+    "truth": "6200",
+    "account": "6200",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Emil Frey Autowäsche Firmenwagen ads budget",
+    "truth": "6200",
+    "account": "6200",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Emil Frey Autowäsche Firmenwagen Inserat",
+    "truth": "6200",
+    "account": "6200",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Salt Telefonie Rechnung April - Anzeige",
+    "truth": "6510",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Salt Telefonie Rechnung April (promo)",
+    "truth": "6510",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Salt Telefonie Rechnung April campagne pub",
+    "truth": "6510",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Salt Telefonie Rechnung April / Reklame",
+    "truth": "6510",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Salt Telefonie Rechnung April für Kundenwerbung",
+    "truth": "6510",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Salt Telefonie Rechnung April Marketingkosten",
+    "truth": "6510",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Salt Telefonie Rechnung April ads budget",
+    "truth": "6510",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Salt Telefonie Rechnung April Inserat",
+    "truth": "6510",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Restaurant Kronenhalle Flug Geschäftsreise - Anzeige",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Restaurant Kronenhalle Flug Geschäftsreise (promo)",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Restaurant Kronenhalle Flug Geschäftsreise campagne pub",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Restaurant Kronenhalle Flug Geschäftsreise / Reklame",
+    "truth": "5830",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Restaurant Kronenhalle Flug Geschäftsreise ads budget",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Restaurant Kronenhalle Flug Geschäftsreise Inserat",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Mobility Service Firmenwagen - Anzeige",
+    "truth": "6200",
+    "account": "6200",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Mobility Service Firmenwagen (promo)",
+    "truth": "6200",
+    "account": "6200",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Mobility Service Firmenwagen campagne pub",
+    "truth": "6200",
+    "account": "6200",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Mobility Service Firmenwagen / Reklame",
+    "truth": "6200",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Mobility Service Firmenwagen für Kundenwerbung",
+    "truth": "6200",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Mobility Service Firmenwagen Marketingkosten",
+    "truth": "6200",
+    "account": "6200",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Mobility Service Firmenwagen ads budget",
+    "truth": "6200",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Mobility Service Firmenwagen Inserat",
+    "truth": "6200",
+    "account": "6200",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Dropbox Subscription renewal - Anzeige",
+    "truth": "6570",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Dropbox Subscription renewal (promo)",
+    "truth": "6570",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Dropbox Subscription renewal campagne pub",
+    "truth": "6570",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Dropbox Subscription renewal / Reklame",
+    "truth": "6570",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Dropbox Subscription renewal für Kundenwerbung",
+    "truth": "6570",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Dropbox Subscription renewal Marketingkosten",
+    "truth": "6570",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Dropbox Subscription renewal ads budget",
+    "truth": "6570",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Dropbox Subscription renewal Inserat",
+    "truth": "6570",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Atlassian Lizenz Jahresabo - Anzeige",
+    "truth": "6570",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Atlassian Lizenz Jahresabo (promo)",
+    "truth": "6570",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Atlassian Lizenz Jahresabo campagne pub",
+    "truth": "6570",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Atlassian Lizenz Jahresabo / Reklame",
+    "truth": "6570",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Atlassian Lizenz Jahresabo für Kundenwerbung",
+    "truth": "6570",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Atlassian Lizenz Jahresabo Marketingkosten",
+    "truth": "6570",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Atlassian Lizenz Jahresabo ads budget",
+    "truth": "6570",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Atlassian Lizenz Jahresabo Inserat",
+    "truth": "6570",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Migros Büro Druckerpapier A4 - Anzeige",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Migros Büro Druckerpapier A4 (promo)",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Migros Büro Druckerpapier A4 campagne pub",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Migros Büro Druckerpapier A4 / Reklame",
+    "truth": "6500",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Migros Büro Druckerpapier A4 für Kundenwerbung",
+    "truth": "6500",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Migros Büro Druckerpapier A4 Marketingkosten",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Migros Büro Druckerpapier A4 ads budget",
+    "truth": "6500",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Migros Büro Druckerpapier A4 Inserat",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Coop Pronto Verpackungsmaterial - Anzeige",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Coop Pronto Verpackungsmaterial (promo)",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Coop Pronto Verpackungsmaterial campagne pub",
+    "truth": "6500",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Coop Pronto Verpackungsmaterial / Reklame",
+    "truth": "6500",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Coop Pronto Verpackungsmaterial für Kundenwerbung",
+    "truth": "6500",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Coop Pronto Verpackungsmaterial Marketingkosten",
+    "truth": "6500",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Coop Pronto Verpackungsmaterial ads budget",
+    "truth": "6500",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Coop Pronto Verpackungsmaterial Inserat",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Init7 SIM Karte Mitarbeiter - Anzeige",
+    "truth": "6510",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Init7 SIM Karte Mitarbeiter (promo)",
+    "truth": "6510",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Init7 SIM Karte Mitarbeiter campagne pub",
+    "truth": "6510",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Init7 SIM Karte Mitarbeiter / Reklame",
+    "truth": "6510",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Init7 SIM Karte Mitarbeiter für Kundenwerbung",
+    "truth": "6510",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Init7 SIM Karte Mitarbeiter Marketingkosten",
+    "truth": "6510",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Init7 SIM Karte Mitarbeiter ads budget",
+    "truth": "6510",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Init7 SIM Karte Mitarbeiter Inserat",
+    "truth": "6510",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Brack Post Paket Versand - Anzeige",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Brack Post Paket Versand (promo)",
+    "truth": "6500",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Brack Post Paket Versand campagne pub",
+    "truth": "6500",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Brack Post Paket Versand / Reklame",
+    "truth": "6500",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Brack Post Paket Versand für Kundenwerbung",
+    "truth": "6500",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Brack Post Paket Versand Marketingkosten",
+    "truth": "6500",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Brack Post Paket Versand ads budget",
+    "truth": "6500",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Brack Post Paket Versand Inserat",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Post CH Büromaterial Papier und Toner - Anzeige",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Post CH Büromaterial Papier und Toner (promo)",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Post CH Büromaterial Papier und Toner campagne pub",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Post CH Büromaterial Papier und Toner / Reklame",
+    "truth": "6500",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Post CH Büromaterial Papier und Toner für Kundenwerbung",
+    "truth": "6500",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Post CH Büromaterial Papier und Toner Marketingkosten",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Post CH Büromaterial Papier und Toner ads budget",
+    "truth": "6500",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Post CH Büromaterial Papier und Toner Inserat",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Staples Verpackungsmaterial - Anzeige",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Staples Verpackungsmaterial (promo)",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Staples Verpackungsmaterial campagne pub",
+    "truth": "6500",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Staples Verpackungsmaterial / Reklame",
+    "truth": "6500",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Staples Verpackungsmaterial für Kundenwerbung",
+    "truth": "6500",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Staples Verpackungsmaterial Marketingkosten",
+    "truth": "6500",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Staples Verpackungsmaterial ads budget",
+    "truth": "6500",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Staples Verpackungsmaterial Inserat",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Sunrise Roaming Zusatzpaket - Anzeige",
+    "truth": "6510",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Sunrise Roaming Zusatzpaket (promo)",
+    "truth": "6510",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Sunrise Roaming Zusatzpaket campagne pub",
+    "truth": "6510",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Sunrise Roaming Zusatzpaket / Reklame",
+    "truth": "6510",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Sunrise Roaming Zusatzpaket für Kundenwerbung",
+    "truth": "6510",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Sunrise Roaming Zusatzpaket Marketingkosten",
+    "truth": "6510",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Sunrise Roaming Zusatzpaket ads budget",
+    "truth": "6510",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Sunrise Roaming Zusatzpaket Inserat",
+    "truth": "6510",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Restaurant Kronenhalle Reisespesen März - Anzeige",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Restaurant Kronenhalle Reisespesen März (promo)",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Restaurant Kronenhalle Reisespesen März campagne pub",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Restaurant Kronenhalle Reisespesen März / Reklame",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Restaurant Kronenhalle Reisespesen März Marketingkosten",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Restaurant Kronenhalle Reisespesen März ads budget",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Restaurant Kronenhalle Reisespesen März Inserat",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "BLS Verpflegung auswärts Termin - Anzeige",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "BLS Verpflegung auswärts Termin (promo)",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "BLS Verpflegung auswärts Termin campagne pub",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "BLS Verpflegung auswärts Termin / Reklame",
+    "truth": "5830",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "BLS Verpflegung auswärts Termin für Kundenwerbung",
+    "truth": "5830",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "BLS Verpflegung auswärts Termin Marketingkosten",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "BLS Verpflegung auswärts Termin ads budget",
+    "truth": "5830",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "BLS Verpflegung auswärts Termin Inserat",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Atlassian Team Plan - Anzeige",
+    "truth": "6570",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Atlassian Team Plan (promo)",
+    "truth": "6570",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Atlassian Team Plan campagne pub",
+    "truth": "6570",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Atlassian Team Plan / Reklame",
+    "truth": "6570",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Atlassian Team Plan für Kundenwerbung",
+    "truth": "6570",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Atlassian Team Plan Marketingkosten",
+    "truth": "6570",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Atlassian Team Plan ads budget",
+    "truth": "6570",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Atlassian Team Plan Inserat",
+    "truth": "6570",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Swisscom Festnetz Gebühren Dezember - Anzeige",
+    "truth": "6510",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Swisscom Festnetz Gebühren Dezember (promo)",
+    "truth": "6510",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Swisscom Festnetz Gebühren Dezember campagne pub",
+    "truth": "6510",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Swisscom Festnetz Gebühren Dezember / Reklame",
+    "truth": "6510",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Swisscom Festnetz Gebühren Dezember für Kundenwerbung",
+    "truth": "6510",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Swisscom Festnetz Gebühren Dezember Marketingkosten",
+    "truth": "6510",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Swisscom Festnetz Gebühren Dezember ads budget",
+    "truth": "6510",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Swisscom Festnetz Gebühren Dezember Inserat",
+    "truth": "6510",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Notion Team Plan - Anzeige",
+    "truth": "6570",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Notion Team Plan (promo)",
+    "truth": "6570",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Notion Team Plan campagne pub",
+    "truth": "6570",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Notion Team Plan / Reklame",
+    "truth": "6570",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Notion Team Plan für Kundenwerbung",
+    "truth": "6570",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Notion Team Plan Marketingkosten",
+    "truth": "6570",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Notion Team Plan ads budget",
+    "truth": "6570",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Notion Team Plan Inserat",
+    "truth": "6570",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Mobility Parkgebühren Firmenfahrzeug - Anzeige",
+    "truth": "6200",
+    "account": "6200",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Mobility Parkgebühren Firmenfahrzeug (promo)",
+    "truth": "6200",
+    "account": "6200",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Mobility Parkgebühren Firmenfahrzeug campagne pub",
+    "truth": "6200",
+    "account": "6200",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Mobility Parkgebühren Firmenfahrzeug / Reklame",
+    "truth": "6200",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Mobility Parkgebühren Firmenfahrzeug für Kundenwerbung",
+    "truth": "6200",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Mobility Parkgebühren Firmenfahrzeug Marketingkosten",
+    "truth": "6200",
+    "account": "6200",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Mobility Parkgebühren Firmenfahrzeug ads budget",
+    "truth": "6200",
+    "account": "6200",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Mobility Parkgebühren Firmenfahrzeug Inserat",
+    "truth": "6200",
+    "account": "6200",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Hetzner Business Plan April - Anzeige",
+    "truth": "6570",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Hetzner Business Plan April (promo)",
+    "truth": "6570",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Hetzner Business Plan April campagne pub",
+    "truth": "6570",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Hetzner Business Plan April / Reklame",
+    "truth": "6570",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Hetzner Business Plan April für Kundenwerbung",
+    "truth": "6570",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Hetzner Business Plan April Marketingkosten",
+    "truth": "6570",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Hetzner Business Plan April ads budget",
+    "truth": "6570",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Hetzner Business Plan April Inserat",
+    "truth": "6570",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "AMAG Versicherung Firmenwagen März - Anzeige",
+    "truth": "6200",
+    "account": "6200",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "AMAG Versicherung Firmenwagen März (promo)",
+    "truth": "6200",
+    "account": "6200",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "AMAG Versicherung Firmenwagen März campagne pub",
+    "truth": "6200",
+    "account": "6200",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "AMAG Versicherung Firmenwagen März / Reklame",
+    "truth": "6200",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "AMAG Versicherung Firmenwagen März für Kundenwerbung",
+    "truth": "6200",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "AMAG Versicherung Firmenwagen März Marketingkosten",
+    "truth": "6200",
+    "account": "6200",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "AMAG Versicherung Firmenwagen März ads budget",
+    "truth": "6200",
+    "account": "6200",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "AMAG Versicherung Firmenwagen März Inserat",
+    "truth": "6200",
+    "account": "6200",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Cablecom Internet fibre line - Anzeige",
+    "truth": "6510",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Cablecom Internet fibre line (promo)",
+    "truth": "6510",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Cablecom Internet fibre line campagne pub",
+    "truth": "6510",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Cablecom Internet fibre line / Reklame",
+    "truth": "6510",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Cablecom Internet fibre line für Kundenwerbung",
+    "truth": "6510",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Cablecom Internet fibre line Marketingkosten",
+    "truth": "6510",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Cablecom Internet fibre line ads budget",
+    "truth": "6510",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Cablecom Internet fibre line Inserat",
+    "truth": "6510",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Hotel Bellevue Taxi Geschäftsreise - Anzeige",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Hotel Bellevue Taxi Geschäftsreise (promo)",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Hotel Bellevue Taxi Geschäftsreise campagne pub",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Hotel Bellevue Taxi Geschäftsreise / Reklame",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Hotel Bellevue Taxi Geschäftsreise für Kundenwerbung",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Hotel Bellevue Taxi Geschäftsreise Marketingkosten",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Hotel Bellevue Taxi Geschäftsreise ads budget",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Hotel Bellevue Taxi Geschäftsreise Inserat",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Migros Büro Büromaterial Papier und Toner - Anzeige",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Migros Büro Büromaterial Papier und Toner (promo)",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Migros Büro Büromaterial Papier und Toner campagne pub",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Migros Büro Büromaterial Papier und Toner / Reklame",
+    "truth": "6500",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Migros Büro Büromaterial Papier und Toner ads budget",
+    "truth": "6500",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Migros Büro Büromaterial Papier und Toner Inserat",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Denner Reinigungsmaterial Büro - Anzeige",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Denner Reinigungsmaterial Büro (promo)",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Denner Reinigungsmaterial Büro campagne pub",
+    "truth": "6500",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Denner Reinigungsmaterial Büro / Reklame",
+    "truth": "6500",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Denner Reinigungsmaterial Büro für Kundenwerbung",
+    "truth": "6500",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Denner Reinigungsmaterial Büro Marketingkosten",
+    "truth": "6500",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Denner Reinigungsmaterial Büro ads budget",
+    "truth": "6500",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Denner Reinigungsmaterial Büro Inserat",
+    "truth": "6500",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "JetBrains Domain Verlängerung - Anzeige",
+    "truth": "6570",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "JetBrains Domain Verlängerung (promo)",
+    "truth": "6570",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "JetBrains Domain Verlängerung campagne pub",
+    "truth": "6570",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "JetBrains Domain Verlängerung / Reklame",
+    "truth": "6570",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "JetBrains Domain Verlängerung für Kundenwerbung",
+    "truth": "6570",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "JetBrains Domain Verlängerung Marketingkosten",
+    "truth": "6570",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "JetBrains Domain Verlängerung ads budget",
+    "truth": "6570",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "JetBrains Domain Verlängerung Inserat",
+    "truth": "6570",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Slack Lizenz Jahresabo - Anzeige",
+    "truth": "6570",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Slack Lizenz Jahresabo (promo)",
+    "truth": "6570",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Slack Lizenz Jahresabo campagne pub",
+    "truth": "6570",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Slack Lizenz Jahresabo / Reklame",
+    "truth": "6570",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Slack Lizenz Jahresabo für Kundenwerbung",
+    "truth": "6570",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Slack Lizenz Jahresabo Marketingkosten",
+    "truth": "6570",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Slack Lizenz Jahresabo ads budget",
+    "truth": "6570",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Slack Lizenz Jahresabo Inserat",
+    "truth": "6570",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Tamoil Service Firmenwagen - Anzeige",
+    "truth": "6200",
+    "account": "6200",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Tamoil Service Firmenwagen (promo)",
+    "truth": "6200",
+    "account": "6200",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Tamoil Service Firmenwagen campagne pub",
+    "truth": "6200",
+    "account": "6500",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Tamoil Service Firmenwagen / Reklame",
+    "truth": "6200",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Tamoil Service Firmenwagen für Kundenwerbung",
+    "truth": "6200",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Tamoil Service Firmenwagen Marketingkosten",
+    "truth": "6200",
+    "account": "6200",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Tamoil Service Firmenwagen ads budget",
+    "truth": "6200",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Tamoil Service Firmenwagen Inserat",
+    "truth": "6200",
+    "account": "6200",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Sunrise Business Internet Juli - Anzeige",
+    "truth": "6510",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Sunrise Business Internet Juli (promo)",
+    "truth": "6510",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Sunrise Business Internet Juli campagne pub",
+    "truth": "6510",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Sunrise Business Internet Juli / Reklame",
+    "truth": "6510",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Sunrise Business Internet Juli für Kundenwerbung",
+    "truth": "6510",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Sunrise Business Internet Juli Marketingkosten",
+    "truth": "6510",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Sunrise Business Internet Juli ads budget",
+    "truth": "6510",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Sunrise Business Internet Juli Inserat",
+    "truth": "6510",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Quickline Festnetz Gebühren Juni - Anzeige",
+    "truth": "6510",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Quickline Festnetz Gebühren Juni (promo)",
+    "truth": "6510",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Quickline Festnetz Gebühren Juni campagne pub",
+    "truth": "6510",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Quickline Festnetz Gebühren Juni / Reklame",
+    "truth": "6510",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Quickline Festnetz Gebühren Juni für Kundenwerbung",
+    "truth": "6510",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Quickline Festnetz Gebühren Juni Marketingkosten",
+    "truth": "6510",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Quickline Festnetz Gebühren Juni ads budget",
+    "truth": "6510",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Quickline Festnetz Gebühren Juni Inserat",
+    "truth": "6510",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Swisscom Telefonie Rechnung März - Anzeige",
+    "truth": "6510",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Swisscom Telefonie Rechnung März (promo)",
+    "truth": "6510",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Swisscom Telefonie Rechnung März campagne pub",
+    "truth": "6510",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Swisscom Telefonie Rechnung März / Reklame",
+    "truth": "6510",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Swisscom Telefonie Rechnung März für Kundenwerbung",
+    "truth": "6510",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Swisscom Telefonie Rechnung März Marketingkosten",
+    "truth": "6510",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Swisscom Telefonie Rechnung März ads budget",
+    "truth": "6510",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Swisscom Telefonie Rechnung März Inserat",
+    "truth": "6510",
+    "account": "6510",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Taxi 7x7 Flug Geschäftsreise - Anzeige",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Taxi 7x7 Flug Geschäftsreise (promo)",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Taxi 7x7 Flug Geschäftsreise campagne pub",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Taxi 7x7 Flug Geschäftsreise / Reklame",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Taxi 7x7 Flug Geschäftsreise für Kundenwerbung",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Taxi 7x7 Flug Geschäftsreise Marketingkosten",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Taxi 7x7 Flug Geschäftsreise ads budget",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Taxi 7x7 Flug Geschäftsreise Inserat",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Uber Train ticket client visit - Anzeige",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Uber Train ticket client visit (promo)",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Uber Train ticket client visit campagne pub",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Uber Train ticket client visit / Reklame",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Uber Train ticket client visit für Kundenwerbung",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Uber Train ticket client visit Marketingkosten",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Uber Train ticket client visit ads budget",
+    "truth": "5830",
+    "account": null,
+    "needs_human": true,
+    "reasons": [
+     "model returned no valid account"
+    ]
+   },
+   {
+    "text": "Uber Train ticket client visit Inserat",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Atlassian Subscription renewal - Anzeige",
+    "truth": "6570",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Atlassian Subscription renewal (promo)",
+    "truth": "6570",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Atlassian Subscription renewal campagne pub",
+    "truth": "6570",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Atlassian Subscription renewal / Reklame",
+    "truth": "6570",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Atlassian Subscription renewal für Kundenwerbung",
+    "truth": "6570",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Atlassian Subscription renewal Marketingkosten",
+    "truth": "6570",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Atlassian Subscription renewal ads budget",
+    "truth": "6570",
+    "account": "6600",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Atlassian Subscription renewal Inserat",
+    "truth": "6570",
+    "account": "6570",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Hotel Schweizerhof Übernachtung Kundentermin - Anzeige",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Hotel Schweizerhof Übernachtung Kundentermin (promo)",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Hotel Schweizerhof Übernachtung Kundentermin / Reklame",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Hotel Schweizerhof Übernachtung Kundentermin ads budget",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   },
+   {
+    "text": "Hotel Schweizerhof Übernachtung Kundentermin Inserat",
+    "truth": "5830",
+    "account": "5830",
+    "needs_human": false,
+    "reasons": []
+   }
+  ]
+ }
+}
