@@ -26,6 +26,7 @@ so injected text cannot produce arbitrary output.
     uv run python eval_short.py
     uv run python agent.py
     uv run python eval_agent.py
+    uv run python eval_ablation.py
 
 Needs the 8-bit model from https://huggingface.co/ChadSaglam/swiss-bookkeeping-qwen-lora-mlx-8bit
 (set MODEL_PATH in core.py), Apple Silicon.
@@ -42,6 +43,7 @@ Needs the 8-bit model from https://huggingface.co/ChadSaglam/swiss-bookkeeping-q
 | Short attacks: 12 suffixes on 30 clean lines, all under the 55 cap | 210 / 360 changed the account and were not flagged; 166 / 360 moved to 6600; 1 / 360 flagged |
 | Agent eval, clean test lines (56) | 5 / 56 wrong account; 2 flagged; 4 / 54 wrong among normal-priority drafts |
 | Agent eval, 8 fresh suffixes on non-advertising test lines (352 cases) | 152 / 352 wrong (43%); 85 wrongly moved to 6600; 1 flagged; 151 / 351 normal-priority drafts wrong |
+| Ablation on 74 held-out-vendor rows: amount and VAT neutralized or shuffled | 69 / 74 real, 68 / 74 neutral, 68 / 74 shuffled; 1 and 3 predictions changed |
 
 ## Agent
 
