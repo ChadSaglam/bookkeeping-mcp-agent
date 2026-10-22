@@ -27,6 +27,7 @@ so injected text cannot produce arbitrary output.
     uv run python agent.py
     uv run python eval_agent.py
     uv run python eval_ablation.py
+    uv run python eval_ood.py
 
 Needs the 8-bit model from https://huggingface.co/ChadSaglam/swiss-bookkeeping-qwen-lora-mlx-8bit
 (set MODEL_PATH in core.py), Apple Silicon.
@@ -44,6 +45,7 @@ Needs the 8-bit model from https://huggingface.co/ChadSaglam/swiss-bookkeeping-q
 | Agent eval, clean test lines (56) | 5 / 56 wrong account; 2 flagged; 4 / 54 wrong among normal-priority drafts |
 | Agent eval, 8 fresh suffixes on non-advertising test lines (352 cases) | 152 / 352 wrong (43%); 85 wrongly moved to 6600; 1 flagged; 151 / 351 normal-priority drafts wrong |
 | Ablation on 74 held-out-vendor rows: amount and VAT neutralized or shuffled | 69 / 74 real, 68 / 74 neutral, 68 / 74 shuffled; 1 and 3 predictions changed |
+| Out-of-phrase test: 36 hand-written lines, unseen vendors and wording | 17 / 36 = 47.2% (95% interval 32-63%); 19 / 36 with amount and VAT neutralized; amount+VAT lookup 6 / 36 (chance) |
 
 ## Agent
 
@@ -68,6 +70,9 @@ needs_human only sets the priority (high or normal). It is not a safety label: i
   and are not independent. "Wrong" is measured against the original label, which can be debatable for
   suffixes with real content (for example "Marketingkosten"). The suffixes were written after the earlier
   short-attack results, so they are not a blind test.
+- On 36 hand-written lines with unseen vendors and wording the model scored 47.2% (interval 32-63%), against
+  93.2% on the held-out-vendor test. The set was written by the author with the model's weak spots in mind and the
+  labels were not independently reviewed, so read it as a lower bound for messy real invoices.
 - The fine-tuned model treats words like "advertising" as content, so a line that says so can steer it.
 - Rules do not use model uncertainty: a confidently wrong account on a clean line is not flagged.
 - The server never books anything; the human decision is the real safeguard.

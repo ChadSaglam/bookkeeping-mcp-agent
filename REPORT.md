@@ -27,6 +27,7 @@ which suggestions need attention, and can an MCP agent use them to build a revie
 | Agent eval, clean test lines | 5 / 56 wrong; 4 / 54 wrong among normal-priority drafts |
 | Agent eval, 8 fresh suffixes (352 cases) | 152 / 352 wrong (43%); 85 wrongly moved to 6600; 1 flagged; 151 / 351 normal-priority drafts wrong |
 | Ablation on 74 held-out-vendor rows: amount and VAT neutralized or shuffled | 69 / 74 real, 68 / 74 neutral, 68 / 74 shuffled; 1 and 3 predictions changed |
+| Out-of-phrase test: 36 hand-written lines, unseen vendors and wording | 17 / 36 = 47.2% (95% interval 32-63%); 19 / 36 with amount and VAT neutralized; amount+VAT lookup 6 / 36 (chance) |
 
 ## Findings
 
@@ -68,5 +69,6 @@ which suggestions need attention, and can an MCP agent use them to build a revie
     uv run python agent.py
     uv run python eval_agent.py
     uv run python eval_ablation.py
+    uv run python eval_ood.py
 
 Raw per-case results: eval_agent_results.json.
