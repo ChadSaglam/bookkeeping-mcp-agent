@@ -1,5 +1,7 @@
 # Bookkeeping MCP Agent
 
+[![Tests](https://github.com/ChadSaglam/bookkeeping-mcp-agent/actions/workflows/tests.yml/badge.svg)](https://github.com/ChadSaglam/bookkeeping-mcp-agent/actions/workflows/tests.yml)
+
 A local MCP server and client that turn synthetic Swiss SME invoice lines into account-suggestion drafts. The server combines an 8-bit Qwen2.5-0.5B model with deterministic VAT, amount and text checks. It never posts a transaction: every output remains pending human review.
 
 ## Resources
