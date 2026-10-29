@@ -11,6 +11,9 @@ which suggestions need attention, and can an MCP agent use them to build a revie
 ## Setup
 
 - MCP server (FastMCP, stdio) with three tools: lookup_account, check_vat, review_invoice_line.
+- Runtime model: [8-bit MLX variant](https://huggingface.co/ChadSaglam/swiss-bookkeeping-qwen-lora-mlx-8bit) of the released Qwen2.5-0.5B LoRA fine-tune.
+- Data: [synthetic main dataset and hand-written OOD set](https://huggingface.co/datasets/ChadSaglam/swiss-sme-bookkeeping-dataset).
+- Protocol and framework: [Model Context Protocol](https://modelcontextprotocol.io/docs/getting-started/intro), [FastMCP](https://gofastmcp.com/getting-started/welcome).
 - review_invoice_line returns a suggested account, needs_human and reasons. It never books anything.
 - agent.py is a local MCP client. Every line becomes a draft with status draft_pending_human.
   needs_human only sets the queue priority.

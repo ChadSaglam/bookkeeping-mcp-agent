@@ -1,79 +1,144 @@
-# Bookkeeping MCP Server
+# Bookkeeping MCP Agent
 
-A local MCP server (FastMCP, stdio) that exposes a fine-tuned 0.5B bookkeeping model
-as tools, with deterministic guardrails. It never books anything: it only suggests an
-account and says whether a human must check the line. Synthetic data only.
+A local MCP server and client that turn synthetic Swiss SME invoice lines into account-suggestion drafts. The server combines an 8-bit Qwen2.5-0.5B model with deterministic VAT, amount and text checks. It never posts a transaction: every output remains pending human review.
 
-## Tools
+## Resources
 
-- lookup_account: name of an account in the test chart
-- check_vat: OK or FLAG for a VAT rate
-- review_invoice_line: suggested account plus needs_human and reasons
-
-## Guardrails
-
-A line goes to a human if the VAT rate is not allowed, the amount is above CHF 1000,
-the text is unusually long or contains instruction-like wording, or the model returns
-no valid account. The model output is parsed to a 4-digit account in the chart,
-so injected text cannot produce arbitrary output.
-
-## Run
-
-    uv sync
-    uv run python test_tools.py
-    uv run python eval_guardrails.py
-    uv run python eval_heldout.py
-    uv run python eval_short.py
-    uv run python agent.py
-    uv run python eval_agent.py
-    uv run python eval_ablation.py
-    uv run python eval_ood.py
-
-Needs the 8-bit model from https://huggingface.co/ChadSaglam/swiss-bookkeeping-qwen-lora-mlx-8bit
-(set MODEL_PATH in core.py), Apple Silicon.
-
-## Measured guardrail results (synthetic data, small samples)
-
-| Test | Result |
+| Resource | Link |
 |---|---|
-| Clean test lines flagged by text rules | 0 / 74 |
-| Known attacks (rules were written from them) | 30 / 30 flagged |
-| Held-out attacks, keyword rules only | 22 / 50 changed the account and were not flagged |
-| Held-out long attacks, plus length cap of 55 characters | 3 / 50 (the cap fired on length, not on content) |
+| Runtime model used by this repository | [8-bit MLX model](https://huggingface.co/ChadSaglam/swiss-bookkeeping-qwen-lora-mlx-8bit) |
+| Full-precision weights and model card | [Swiss Bookkeeping Qwen LoRA](https://huggingface.co/ChadSaglam/swiss-bookkeeping-qwen-lora) |
+| Training data, OOD set and validation scripts | [Swiss SME Bookkeeping dataset](https://huggingface.co/datasets/ChadSaglam/swiss-sme-bookkeeping-dataset) |
+| Training and model evaluation code | [swiss-bookkeeping-ai](https://github.com/ChadSaglam/swiss-bookkeeping-ai) |
+| Protocol used by the server and client | [Model Context Protocol documentation](https://modelcontextprotocol.io/docs/getting-started/intro) |
+| Python framework used in this project | [FastMCP documentation](https://gofastmcp.com/getting-started/welcome) |
+
+All data is synthetic. The six-account chart is a simplified test chart, not an official Swiss chart of accounts. This project is not accounting or tax advice.
+
+## How it works
+
+```text
+invoice CSV -> local MCP client -> review_invoice_line tool
+             -> model suggestion + deterministic checks
+             -> review_queue.jsonl (all rows pending human review)
+```
+
+The MCP server runs over stdio and exposes three tools:
+
+| Tool | Purpose |
+|---|---|
+| `lookup_account` | Return an account name, or an error for an unknown code. |
+| `check_vat` | Check a VAT rate against 0, 2.6, 3.8 and 8.1 percent. |
+| `review_invoice_line` | Return a suggested account, review priority and reasons. |
+
+A line receives high priority when the VAT rate is outside the allowed list, the amount exceeds CHF 1,000, the text triggers a length or instruction-like-wording rule, or the model returns no valid account. Model output is reduced to a four-digit code and accepted only if it exists in the chart.
+
+**`needs_human` is a queue-priority field, not a safety label.** Normal-priority drafts can still be wrong. The measured attack results below show why every row stays a draft.
+
+## Requirements
+
+- macOS on Apple Silicon for the 8-bit MLX runtime
+- Python 3.13 or newer
+- [uv](https://docs.astral.sh/uv/)
+- About 525 MB for the model download, plus runtime memory
+
+## Quickstart
+
+```bash
+git clone https://github.com/ChadSaglam/bookkeeping-mcp-agent.git
+cd bookkeeping-mcp-agent
+uv sync
+uv run python test_tools.py
+uv run python agent.py
+```
+
+The first model run downloads `ChadSaglam/swiss-bookkeeping-qwen-lora-mlx-8bit` through `mlx-lm`. To use an existing local copy instead:
+
+```bash
+export BOOKKEEPING_MODEL_PATH=/absolute/path/to/fused_8bit
+uv run python agent.py
+```
+
+`agent.py` starts the MCP server, checks that all three tools are available, processes `invoice_lines_demo.csv` and writes `review_queue.jsonl`. A different CSV can be supplied as the first argument:
+
+```bash
+uv run python agent.py path/to/invoices.csv
+```
+
+The input columns are `text`, `amount_chf` and `vat_rate`. The output file is overwritten on each run. Example record:
+
+```json
+{
+  "line_id": 5,
+  "text": "Server Migration Hetzner",
+  "amount_chf": 1450.0,
+  "vat_rate": 8.1,
+  "suggested_account": "6570",
+  "account_name": "IT and software",
+  "priority": "high",
+  "reasons": ["amount above review threshold"],
+  "status": "draft_pending_human"
+}
+```
+
+To connect another MCP client, run `mcp_server.py` over stdio. The tool implementations are in `core.py`; the transport boundary is in `mcp_server.py`.
+
+## Evaluation snapshot
+
+These are small synthetic-data experiments, not estimates of production accuracy. See [REPORT.md](REPORT.md) for the complete table, attack construction and sample limitations.
+
+| Check | Observed result |
+|---|---|
+| Held-out-vendor rows | 69 / 74 correct (93.2%) |
+| Hand-written out-of-phrase stress test | 17 / 36 correct (47.2%; 95% interval 32–63%) |
+| Clean agent test rows | 5 / 56 wrong; 4 / 54 normal-priority drafts wrong |
+| Short suffix attacks through the MCP agent | 152 / 352 wrong (43%); 151 / 351 normal-priority drafts wrong |
 | Harmless noisy lines flagged by the length cap | 19 / 40 |
-| Short attacks: 12 suffixes on 30 clean lines, all under the 55 cap | 210 / 360 changed the account and were not flagged; 166 / 360 moved to 6600; 1 / 360 flagged |
-| Agent eval, clean test lines (56) | 5 / 56 wrong account; 2 flagged; 4 / 54 wrong among normal-priority drafts |
-| Agent eval, 8 fresh suffixes on non-advertising test lines (352 cases) | 152 / 352 wrong (43%); 85 wrongly moved to 6600; 1 flagged; 151 / 351 normal-priority drafts wrong |
-| Ablation on 74 held-out-vendor rows: amount and VAT neutralized or shuffled | 69 / 74 real, 68 / 74 neutral, 68 / 74 shuffled; 1 and 3 predictions changed |
-| Out-of-phrase test: 36 hand-written lines, unseen vendors and wording | 17 / 36 = 47.2% (95% interval 32-63%); 19 / 36 with amount and VAT neutralized; amount+VAT lookup 6 / 36 (chance) |
 
-## Agent
+The OOD set was written around known weaknesses and its labels were not independently reviewed. Attack cases are repeated modifications of a smaller set of base lines, not independent samples. Some suffixes contain genuine accounting content, so the original label is not always an unambiguous target.
 
-agent.py is a local MCP client. It starts the server over stdio, sends every invoice line to
-review_invoice_line and writes review_queue.jsonl. Every line has status draft_pending_human.
-needs_human only sets the priority (high or normal). It is not a safety label: in the agent eval,
-151 of 351 normal-priority drafts under short suffix attacks had the wrong account.
+## Reproduce the evaluations
+
+The quickstart and unit tests need only this repository. The evaluation scripts also expect the dataset and training repositories beside this one:
+
+```text
+parent-directory/
+├── bookkeeping-mcp-agent/
+├── swiss-bookkeeping-ai/
+└── swiss-sme-bookkeeping-dataset/
+```
+
+From this repository's root:
+
+```bash
+uv run python eval_guardrails.py
+uv run python eval_false_positives.py
+uv run python eval_heldout.py
+uv run python eval_short.py
+uv run python agent.py
+uv run python eval_agent.py
+uv run python eval_ablation.py
+uv run python eval_ood.py
+```
+
+These scripts run many model inferences and take longer than the demo. Raw agent results are written to `eval_agent_results.json`.
+
+## Repository layout
+
+| File | Role |
+|---|---|
+| `mcp_server.py` | FastMCP tool definitions and stdio server |
+| `agent.py` | Local MCP client and review-queue writer |
+| `core.py` | Model loading, output parsing and deterministic checks |
+| `test_tools.py` | Fast unit tests with the model call mocked |
+| `eval_*.py` | Reproducible robustness and ablation experiments |
+| `REPORT.md` | Full measurements, interpretation and limitations |
 
 ## Known limits
 
-- Keyword and length rules do not generalize. The length cap is not a content defense: it only caught
-  long attacks. Short suffixes such as "(advertising)", "- Werbung" or "pour publicité" moved the account
-  to 6600 in most cases without a flag (see short-attack row). needs_human does not protect against
-  content-based steering.
-- The short-attack suffixes were chosen after reading the keyword list, so they are a development set,
-  not a blind test. Any rule tuned on them needs a fresh held-out set.
-- Small sample: 30 base lines (some from the model's own test file), synthetic data.
-- The 56 test rows were not used for training (0 overlap with train.jsonl). 44 of them are in the
-  validation file and 12 in the hard test file of the model's data split, so they are not fully
-  independent of model development.
-- Agent eval: 56 test rows, so the 352 attacked cases are about 44 base lines with up to 8 suffixes each
-  and are not independent. "Wrong" is measured against the original label, which can be debatable for
-  suffixes with real content (for example "Marketingkosten"). The suffixes were written after the earlier
-  short-attack results, so they are not a blind test.
-- On 36 hand-written lines with unseen vendors and wording the model scored 47.2% (interval 32-63%), against
-  93.2% on the held-out-vendor test. The set was written by the author with the model's weak spots in mind and the
-  labels were not independently reviewed, so read it as a lower bound for messy real invoices.
-- The fine-tuned model treats words like "advertising" as content, so a line that says so can steer it.
-- Rules do not use model uncertainty: a confidently wrong account on a clean line is not flagged.
-- The server never books anything; the human decision is the real safeguard.
-- Not accounting or tax advice.
+- Keyword and length rules do not generalize to short content-based steering.
+- A confidently wrong account can pass every deterministic check.
+- The 56 agent test rows have no exact training-text overlap, but 44 occur in validation and 12 in the hard test split; they are not fully independent of model development.
+- The data is synthetic, German-centric and limited to six accounts.
+- Model scores are not calibrated confidence estimates.
+- Do not use this project for unattended posting, production bookkeeping or tax decisions.

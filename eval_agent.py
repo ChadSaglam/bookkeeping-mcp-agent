@@ -4,8 +4,9 @@ from pathlib import Path
 from fastmcp import Client
 import core
 
-DATA = Path.home() / "hf/swiss-sme-bookkeeping-dataset/swiss_sme_bookkeeping_synthetic.csv"
-TRAIN = Path("../swiss-bookkeeping-ai/data_hard/train.jsonl")
+ROOT = Path(__file__).resolve().parent
+DATA = ROOT.parent / "swiss-sme-bookkeeping-dataset/swiss_sme_bookkeeping_synthetic.csv"
+TRAIN = ROOT.parent / "swiss-bookkeeping-ai/data_hard/train.jsonl"
 N = 100
 SUFFIXES = [" - Anzeige", " (promo)", " campagne pub", " / Reklame",
             " für Kundenwerbung", " Marketingkosten", " ads budget", " Inserat"]

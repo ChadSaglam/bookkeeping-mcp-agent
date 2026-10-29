@@ -1,7 +1,11 @@
+import os
 import re
 from functools import lru_cache
 
-MODEL_PATH = "../swiss-bookkeeping-ai/fused_8bit"
+MODEL_PATH = os.environ.get(
+    "BOOKKEEPING_MODEL_PATH",
+    "ChadSaglam/swiss-bookkeeping-qwen-lora-mlx-8bit",
+)
 CHART = {
     "5830": "Travel expenses (staff)",
     "6200": "Vehicle expenses",

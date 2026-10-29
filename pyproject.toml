@@ -1,7 +1,7 @@
 [project]
 name = "bookkeeping-mcp-agent"
 version = "0.1.0"
-description = "Add your description here"
+description = "Local MCP tools and a human-review queue for synthetic Swiss SME bookkeeping"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
